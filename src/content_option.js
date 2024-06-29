@@ -1,17 +1,18 @@
-const logotext = "JOHN";
+const logotext = "Julian Traversa";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Julian Traversa",
+    description: "I’m Julian Traversa, a lending and pricing infrastructure architect and founder based in Miami and NYC.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Julian Traversa",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I architect financial infra",
+        second: "I lead organizations",
+        third: "I develop smart contracts",
+        fourth: "I invest in first principals",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "I am a lending and oracle infrastructure architect and founder based in Miami and NYC.",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
@@ -135,9 +136,27 @@ const dataportfolio = [{
     },
 ];
 
+const datainvestments = [{
+    img: "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/udrao3pdgxpx47letgnn",
+    description: "Alliance DAO, the industry consensus #1 accellerator in crypto/web3.",
+    link: "https://alliance.xyz/",
+},
+{
+    img: "https://guide-images.cdn.ifixit.com/igi/kBHBwBvExcPnosii.large",
+    description: "The company behind the Framework, a modular laptop that can be repaired and upgraded.",
+    link: "https://frame.work/",
+},
+{
+    img: "https://i.imgur.com/6SJZbLJ.png",
+    description: "Spheron, decentralized hosting & on-demand DePIN for GPU Compute.",
+    link: "https://www.spheron.network/",
+},
+
+];
+
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
+    YOUR_EMAIL: "julian@traversa.dev",
+    YOUR_FONE: "NEVER-CALL-ME",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
@@ -147,15 +166,16 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/jtraversa",
+    substack: "https://TraversaJulian",
+    linkedin: "https://www.linkedin.com/in/juliant94/",
+    twitter: "https://twitter.com/TraversaJulian",
 };
 export {
     meta,
     dataabout,
     dataportfolio,
+    datainvestments,
     worktimeline,
     skills,
     services,
