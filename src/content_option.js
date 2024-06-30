@@ -1,3 +1,10 @@
+import alliance from "./assets/images/alliance.png";
+import framework from "./assets/images/framework.png";
+import spheron from "./assets/images/spheron.png";
+import allianceInverted from "./assets/images/alliance-inverted.png";
+import frameworkInverted from "./assets/images/framework-inverted.png";
+import spheronInverted from "./assets/images/spheron-inverted.png";
+
 const logotext = "Julian Traversa";
 const meta = {
     title: "Julian Traversa",
@@ -17,36 +24,67 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
-};
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+    title: "Introduction",
+    aboutme: "I'm a Founder and Software Engineer/Architect with 10 years of professional experience ideating and developing financial infrastructure. I specialize in the development of decentralized finance infrastructure and applications, with expertise in fixed-rates, oracle, MEV & rebalancing infrastructure. I have a strong background in organizational management and smart contract engineering, with a passion for open-source software. Furthermore, I have previously founded companies that have raised ~$15m in funding, have created mechanism designs that currently secure over $7b, and have designed technical standards like EIP-4626 which back $10b in assets."
+};   
+
+const worktimeline = [
+    {
+        jobtitle: "COO & Technical Architect",
+        where: "Warlock Labs",
+        date: "2024 - now"
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Chief Executive & Full-Stack",
+        where: "DefiHedge Corporation (Swivel Finance)",
+        date: "2020 - 2024",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Chief Executive & Full-Stack",
+        where: "Nescience Software & Capital",
+        date: "2017 - 2020",
+    },
+    {
+        jobtitle: "Professional MOBA Player",
+        where: "Blizzard Entertainment (Tempo Storm)",
+        date: "2016 - 2018",
     },
 ];
 
+
+const oshighlights = [
+    {
+        thing: "EIP-7724",
+        impact: "Contributed to EIP-7724, the standard for oracle infrastructure.",
+        date: "2024",
+    },
+    {
+        thing: "EIP-5095",
+        impact: "Principally authored EIP-5095, the fixed-rate lending standard.",
+        date: "2023",
+    },
+    {
+        thing: "EIP-4626",
+        impact: "Contributed to EIP-4626 lending standard, currently securing over $10b in assets.",
+        date: "2022"
+    },
+    {
+        thing: "PyAlly",
+        impact: "Developed PyAlly, the python library for interacting Ally Bank's API.",
+        date: "2019",
+    }
+];
+
 const skills = [{
-        name: "Python",
+        name: "Solidity",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
+        name: "Python",
+        value: 80,
     },
     {
-        name: "Javascript",
+        name: "Java/Typescript",
         value: 80,
     },
     {
@@ -59,17 +97,23 @@ const skills = [{
     },
 ];
 
-const services = [{
+const experience = [{
         title: "UI & UX Design",
+        date: "2019 - 2020",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        bullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Sed at nisl euismod urna bibendum sollicitudin."],
     },
     {
         title: "Mobile Apps",
+        date: "2019 - 2020",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        bullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Sed at nisl euismod urna bibendum sollicitudin."],
     },
     {
         title: "Wordpress Design",
+        date: "2019 - 2020",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        bullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Sed at nisl euismod urna bibendum sollicitudin."],
     },
 ];
 
@@ -137,21 +181,23 @@ const dataportfolio = [{
 ];
 
 const datainvestments = [{
-    img: "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/udrao3pdgxpx47letgnn",
+    img: allianceInverted,
+    imgdark: alliance,
     description: "Alliance DAO, the industry consensus #1 accellerator in crypto/web3.",
     link: "https://alliance.xyz/",
 },
 {
-    img: "https://guide-images.cdn.ifixit.com/igi/kBHBwBvExcPnosii.large",
+    img: frameworkInverted,
+    imgdark: framework,
     description: "The company behind the Framework, a modular laptop that can be repaired and upgraded.",
     link: "https://frame.work/",
 },
 {
-    img: "https://i.imgur.com/6SJZbLJ.png",
+    img: spheronInverted,
+    imgdark: spheron,
     description: "Spheron, decentralized hosting & on-demand DePIN for GPU Compute.",
     link: "https://www.spheron.network/",
 },
-
 ];
 
 const contactConfig = {
@@ -178,9 +224,10 @@ export {
     datainvestments,
     worktimeline,
     skills,
-    services,
+    experience,
     introdata,
     contactConfig,
     socialprofils,
     logotext,
+    oshighlights,
 };

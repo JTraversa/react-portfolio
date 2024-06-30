@@ -7,7 +7,8 @@ import {
   meta,
   worktimeline,
   skills,
-  services,
+  experience,
+  oshighlights
 } from "../../content_option";
 
 export const About = () => {
@@ -55,9 +56,29 @@ export const About = () => {
             </table>
           </Col>
         </Row>
+        <Row className=" sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Open-Source Highlights</h3>
+          </Col>
+          <Col lg="7">
+            <table className="table caption-top">
+              <tbody>
+                {oshighlights.map((data, i) => {
+                  return (
+                    <tr key={i}>
+                      <th className="wide-column">{data.thing}</th>
+                      <td>{data.impact}</td>
+                      <td>{data.date}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </Col>
+        </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-4">Technical Expertise</h3>
           </Col>
           <Col lg="7">
             {skills.map((data, i) => {
@@ -81,13 +102,14 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h3 className="color_sec py-4">Professional Experience</h3>
           </Col>
           <Col lg="7">
-            {services.map((data, i) => {
+            {experience.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
+                  <h3 className="service__date">{data.date}</h3>
                   <p className="service_desc">{data.description}</p>
                 </div>
               );
