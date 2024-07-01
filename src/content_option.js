@@ -25,7 +25,8 @@ const introdata = {
 
 const dataabout = {
     title: "Introduction",
-    aboutme: "I'm a Founder and Software Engineer/Architect with 10 years of professional experience ideating and developing financial infrastructure. I specialize in the development of decentralized finance infrastructure and applications, with expertise in fixed-rates, oracle, MEV & rebalancing infrastructure. I have a strong background in organizational management and smart contract engineering, with a passion for open-source software. Furthermore, I have previously founded companies that have raised ~$15m in funding, have created mechanism designs that currently secure over $7b, and have designed technical standards like EIP-4626 which back $10b in assets."
+    aboutme1: "I'm a Founder and Software Engineer/Architect with 10 years of professional experience ideating and developing financial infrastructure.",
+    aboutme2: "I specialize in the development of decentralized finance infrastructure and applications, with expertise in fixed-rates, oracle, MEV & rebalancing infrastructure. I have a strong background in organizational management and smart contract engineering, with a passion for open-source software. Furthermore, I have previously founded companies that have raised ~$15m in funding, have created mechanism designs that currently secure over $7b, and have designed technical standards like EIP-4626 which back $10b in assets.",
 };   
 
 const worktimeline = [
