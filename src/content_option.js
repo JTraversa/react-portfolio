@@ -77,43 +77,68 @@ const oshighlights = [
 
 const skills = [{
         name: "Solidity",
-        value: 90,
+        subSkills: ["Foundry", "Hardhat", "Truffle"]
     },
     {
         name: "Python",
-        value: 80,
+        subSkills: ["NumPy", "Pandas", "Qt5", "PyTorch", "CCXT", "Mt5"]
     },
     {
         name: "Java/Typescript",
-        value: 80,
+        subSkills: ["Ethers/Web3.js", "React", "Bootstrap", "Tailwind"]
     },
     {
-        name: "React",
-        value: 60,
+        name: "Rust",
+        subSkills: ["Erigon", "Reth"]
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "GoLang",
+        subSkills: ["geth", "goest"]
     },
 ];
 
 const experience = [{
-        title: "UI & UX Design",
-        date: "2019 - 2020",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-        bullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Sed at nisl euismod urna bibendum sollicitudin."],
+        title: "COO & Technical Architect",
+        where: "Warlock Labs",
+        date: "2024 - now",
+        description: "At Warlock I designed/architected/implemented the first JIT / MEV redistributing Oracle (Pricing Infrastructure).",
+        bullets: [`Performed comprehensive data analysis on MEV, trade execution, and liquidation methodology.`,
+        `Authored whitepaper / fundraising materials & raised 8m from top investors.`,
+        `Designed / Architected the JIT (Just-In-Time) oracle, which captures and redistributes the value that it generates.`,
+        `Implemented all smart contracts with full test coverage`, 
+        `Created team workflows and managed all organizational responsibilities (HR, accounting, etc.)`,],
     },
     {
-        title: "Mobile Apps",
-        date: "2019 - 2020",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-        bullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Sed at nisl euismod urna bibendum sollicitudin."],
+        title: "CEO & Full-Stack",
+        where: "DefiHedge Corporation (Swivel Finance)",
+        date: "2020 - 2024",
+        description: "At Swivel I designed the first concept of yield tokenization (secures $7b+ in TVL), and brought two fixed-rate products to market: Swivel and Illuminate. During this time Swivel processed $300m+ and our team also developed EIP-5095, the Ethereum standard for fixed-rates.",
+        bullets: ["Designed a highly flexible yield tokenization mechanism which is currently the backbone for nearly all decentralized fixed-rate lending.",
+        "Raised two rounds of funding during bear environments (totaling ~4.75m).",
+        "Recruited, hired, and maintained a healthy team of 10+ employees with nearly 0 turnover.",
+        "Designed and developed principally all smart contracts.", 
+        "Acted as principal marketing lead to bootstrap community efforts and drive user growth.",
+        ],
     },
     {
-        title: "Wordpress Design",
-        date: "2019 - 2020",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-        bullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Sed at nisl euismod urna bibendum sollicitudin."],
+        title: "CEO & Full-Stack ",
+        where: "Nescience Software & Capital",
+        date: "2018 - 2020",
+        description: `At Nescience I managed a firm focused on the development of portfolio management tools, facilitating investment with significantly reduced risk which found found significant (at that time) adoption with $10m+ in deposits.`,
+        bullets: ["Developed flexible, free and open-sourced cryptocurrency rebalancing software across a dozen exchanges (Python, R).",
+        "Developed an equally flexible Direct Indexing tool, allowing users to replace traditional ETF's in their retirement accounts.",
+        "Designed, developed our Direct Indexing tool's graphical interface (qt5).",
+        "Designed/developed of Nescience's proprietary “smart” marketmaking tool.",
+        ],
+    },
+    {
+        title: "Professional Gaming",
+        where: "Blizzard Entertainment (Tempo Storm)",
+        date: "2016 - 2018",
+        description: `Represented Tempo Storm in Heroes of the Storm before the formation of the official team and official Heroes Global Circuit.`,
+        bullets: ["Participated weekly in 1-2 days of tournament play, ~35-45 hours of training and ~5-10 hours of coaching.",
+        "Conducted quantitative analyses of historic strategic data to contribute our strategy development.",
+        ],
     },
 ];
 

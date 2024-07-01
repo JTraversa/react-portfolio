@@ -38,7 +38,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -84,17 +84,8 @@ export const About = () => {
             {skills.map((data, i) => {
               return (
                 <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
+                  <h3 className="skill-title">{data.name}</h3>
+                  <p>{data.subSkills.join(', ')}</p>
                 </div>
               );
             })}
@@ -107,10 +98,17 @@ export const About = () => {
           <Col lg="7">
             {experience.map((data, i) => {
               return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <h3 className="service__date">{data.date}</h3>
-                  <p className="service_desc">{data.description}</p>
+                <div className="experience-block" key={i}>
+                  <h3 className="experience-where">{data.where}</h3>
+                  <h4 className="experience-title">{data.title}</h4>
+                  <p className="experience-date">{data.date}</p>
+                  <p className="experience-description">{data.description}</p>
+                  <ul className="bullet-list">
+                    {data.bullets.map((bullet, j) => (
+                      <li className="bullet-point" key={j}>{bullet}</li>
+                    ))}
+                  </ul>
+                  <hr className="separator" />
                 </div>
               );
             })}
